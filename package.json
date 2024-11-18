@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Another Redis rate-limiter",
   "main": "module.js",
-  "repository": "https://github.com/oeo/stopdude.git",
+  "repository": "oeo/stopdude",
   "author": "boobie <boobie@riseup.net>",
   "license": "mit",
   "scripts": {
