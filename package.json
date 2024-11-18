@@ -1,0 +1,24 @@
+{
+  "name": "stopdude",
+  "version": "1.0.0",
+  "description": "Another Redis rate-limiter",
+  "main": "module.js",
+  "repository": "https://github.com/oeo/stopdude.git",
+  "author": "boobie <boobie@riseup.net>",
+  "license": "mit",
+  "scripts": {
+    "test": "make clean && make && mocha test.js",
+    "build": "make clean && make"
+  },
+  "devDependencies": {
+    "ioredis": "^5.4.1",
+    "ioredis-mock": "^8.9.0",
+    "mocha": "^10.8.2",
+    "sinon": "^19.0.2"
+  },
+  "dependencies": {
+    "date-utils": "^1.2.21",
+    "english-secs": "^1.0.0",
+    "lodash": "^4.17.21"
+  }
+}
