@@ -1,5 +1,3 @@
-![Run Tests](../../actions/workflows/test.yml/badge.svg)
-
 # stopdude
 
 Another Redis rate limiter.
@@ -97,3 +95,43 @@ rateLimiter.create({ key: 'api_user_123', max: 100, time: 'hour' })
 - `yarn test`: Run the test suite to ensure all functionality works as expected.
 - `yarn build`: Compile CoffeeScript source code to JavaScript for distribution.
 
+```
+  StopDude
+    create
+      ✔ should create a new rule
+      ✔ should throw an error for invalid time segment
+    find
+      ✔ should find an existing rule
+      ✔ should return false for non-existent rule
+    update
+      ✔ should update an existing rule
+    incr
+      ✔ should increment the counter
+    clear
+      ✔ should clear the counters
+    remove
+      ✔ should remove a rule
+    stats
+      ✔ should return stats for a rule
+      ✔ should return not allowed when max is reached
+    generateUUID
+      ✔ should generate a valid UUID
+    getExpires
+      ✔ should return a future timestamp for each time segment
+      ✔ should throw an error for invalid time segment
+    secsToTime
+      ✔ should convert a string to seconds
+    getTime
+      ✔ should return current unix timestamp
+    getMinute
+      ✔ should return the start of the current minute
+    getHour
+      ✔ should return the start of the current hour
+    getType
+      ✔ should return the type of an object
+
+
+  18 passing (19ms)
+
+Done in 0.34s.
+```
